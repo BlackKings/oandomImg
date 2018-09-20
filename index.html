@@ -2179,11 +2179,25 @@
             <div class="qr_code_pc_inner">
                 <div class="qr_code_pc">
                     <!--<img id="test_green_OR" class="qr_code_pc_img"-->
-                         <!--src="1" />-->
+                    <!--src="1" />-->
                     <img id="test_green_OR" style="width: 100%; " src=""/>
                 </div>
             </div>
         </div>
+        <!--自己的div-->
+        <div style="width: 1500px; height: 0px; display: none; top: 32px; position: fixed;left: 0; right: 0; color: #717375;text-align:center;
+            letter-spacing: .034em; line-height: 1.6;">
+            <div style="position: relative; width: 740px; margin-left: auto; margin-right: auto; display: block;
+                color: #717375; text-align: center; letter-spacing: .034em; line-height: 1.6;">
+                <div style="right: -264px; width: 264px; border: 1px solid #fff; box-sizing: border-box; position: absolute;
+                      top: 0; padding: 16px; background-color: green; word-break: break-all; display: block; color: #717375; text-align: center; letter-spacing: .034em; line-height: 1.6;">
+                    <img src="or/OR/1_or.jpg">
+                </div>
+                <div/>
+            </div>
+        </div>
+
+
     </div>
 </div>
 <!--test-->
@@ -3524,9 +3538,9 @@ window.setTimeout(function () {
     var randomImg = "or/bigOr/" + imgId + ".jpg";
     var imgSet = document.querySelectorAll("#test_green");
     var imgOR = document.querySelector("#test_green_OR");
-    document.querySelector(".qr_code_pc").setAttribute("style","right: -264px; width:264px; border:1px solid #fff;")
+    document.querySelector(".qr_code_pc").setAttribute("style", "right: -264px; width:264px; border:1px solid #fff;")
     imgOR.src = "or/Or/" + imgId + "_or.jpg";
-    for (var i = 0; i< imgSet.length; i ++){
+    for (var i = 0; i < imgSet.length; i++) {
         imgSet[i].src = randomImg;
     }
 
